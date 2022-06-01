@@ -1,3 +1,7 @@
+const mqttUser = YOUR_MQTT_USER;
+const mqttPassword = YOUR_MQTT_PASSWORD;
+const connectUrl  = YOUR_MQTT_ENDPOINT;
+
 let rawData = [];
 let data = []
 let max = 0;
