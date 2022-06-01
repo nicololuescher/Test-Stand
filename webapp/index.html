@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Stand</title>
+</head>
+<body>
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+
+    <div class="container-fluid">
+        <input class="form-check-input" type="checkbox" checked="true" id="flexCheckDefault" onclick="enableGraph()">
+        <label class="form-check-label" for="flexCheckDefault">
+          Enable Graph
+        </label>
+        <div class="row" id="chartContainer">
+            <div class="chart-container col" style="position: relative; height:80vh;">
+                <canvas id="chart"></canvas>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <label class="display" id="display">Current: 0g</label>
+            </div>
+            <div class="col-sm">
+                <label class="display" id="max">Max: 0g</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <button type="button" id="pause" class="btn btn-primary btn-lg col-12" onclick="pause()">Pause</button>
+            </div>
+            <div class="col-sm">
+                <button type="button" class="btn btn-primary btn-lg col-12" onclick="reset()">Reset</button>
+            </div>
+            <div class="col-sm">
+                <button type="button" class="btn btn-primary btn-lg col-12" onclick="zero()">Zero</button>
+            </div>
+            <div class="col-sm">
+                <button type="button" class="btn btn-primary btn-lg col-12" onclick="tare()">Tare</button>
+            </div>
+            <div class="col-sm input-group">
+                <input type="text" class="form-control" id ="inputWeight" placeholder="Known Weight" aria-label="Known Weight" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-primary btn-lg" type="button" onclick="calibrate()">Calibrate</button>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <button type="button" class="btn btn-primary btn-lg col-12" onclick="exp()">Export Data</button>
+            </div>
+        </div>
+    
+    
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
