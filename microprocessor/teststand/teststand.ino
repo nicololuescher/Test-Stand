@@ -68,7 +68,6 @@ void connectToWiFi()
 void setup()
 {
   Serial.begin(115200);
-  rtc_clk_cpu_freq_set(RTC_CPU_FREQ_80M);
 
   Serial.println("Initializing scale");
   scale.begin(LOADCELL_DOUT_PIN, LOADCELL_SCK_PIN);

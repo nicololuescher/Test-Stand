@@ -1,5 +1,3 @@
-
-
 let rawData = [];
 let data = []
 let max = 0;
@@ -65,6 +63,7 @@ const chart = new Chart(ctx, {
     label: "Measurement",
     datasets: [{
       fill: false,
+      label: "Measurement",
       borderColor: "#007bff",
       pointHoverBackgroundColor: "#55bae7",
       pointHoverBorderColor: "#55bae7",
