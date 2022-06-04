@@ -13,10 +13,11 @@ I just wanted to share my work in hopes that others may find it useful.
 - Soldering Iron and Jumper Cables
 - A USB powerbank
 - About 50cm of 20x20mm Aluminium Strut Profile
-- 11x M5 T Nut for 20x20mm Strut Profile
-- 11x M5x16mm Bolt
-- 11x M5 Washer
-- 2x M5x30mm Bolt
+- 10x M5 T Nut for 20x20mm Strut Profile
+- 10x M5x16mm Bolt
+- 10x M5 Washer
+- 2x M6x30mm Bolt
+- 2x M6 Washer
 - A 3D Printer
 - Basic CAD Knwoledge to create Custom Adapters
 - A Server running a MQTT Broker (Mosquitto)
